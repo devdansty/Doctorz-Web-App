@@ -1,0 +1,148 @@
+/* DoctorDashboard.css */
+:root {
+  --primary: #007bff; /* Doctor theme (blue) */
+  --secondary: #e9f5ff;
+  --dark: #343a40;
+}
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+/* Fixed Sidebar (add <SidebarDoctor> in JSX) */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  background: white;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+  padding: 20px 0;
+}
+
+/* Main Content Area */
+.page-content {
+  margin-left: 250px;
+  flex: 1;
+  padding: 30px 40px;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stats-grid > div {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.stats-grid h3 {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin: 10px 0;
+}
+
+/* Today's Schedule */
+.todays-schedule {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  margin-top: 30px;
+}
+
+.todays-schedule li {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.todays-schedule img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: auto;
+}
+
+/* Doctor Profile Image */
+.doctor-profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary);
+  margin-bottom: 20px;
+}
+
+/* Basic Layout Fixes */
+.page-content {
+  margin-left: 250px; /* Clear sidebar */
+  padding: 30px;
+}
+
+/* Forms */
+input[type="text"], 
+input[type="date"], 
+input[type="time"], 
+input[type="url"] {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 5px;
+}
+
+/* Appointment Cards */
+.appointment-card {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 20px;
+}
+
+.patients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.patient-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
