@@ -1,0 +1,63 @@
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-popup {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+  min-width: 300px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  background: transparent;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+.role-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.role-btn {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: underline;
+  transition: background 0.2s ease;
+}
+
+.role-btn.doctor {
+  color: #007bff;
+}
+
+.role-btn.patient {
+  color: #28a745;
+}
+
+.role-btn:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}

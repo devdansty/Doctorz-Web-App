@@ -1,0 +1,23 @@
+.warning-box {
+  background-color: #ffe6e6;
+  border-left: 5px solid #dc3545;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}

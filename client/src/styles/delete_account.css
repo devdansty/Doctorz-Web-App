@@ -1,0 +1,40 @@
+/* Container card */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+/* Heading */
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #c62828;
+}
+
+/* Warning paragraph */
+.card p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Delete button */
+.btn-danger {
+  background-color: #c62828;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-danger:hover {
+  background-color: #b71c1c;
+}

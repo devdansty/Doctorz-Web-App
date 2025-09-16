@@ -1,0 +1,54 @@
+.sidebar {
+  width: 250px;
+  background: white;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh; /* full viewport height */
+  position: fixed; /* fixed sidebar */
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.profile {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary);
+  margin-bottom: 15px;
+}
+
+.nav-menu {
+  margin-top: 30px;
+  flex-grow: 1;
+}
+
+.nav-item {
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background-color: var(--secondary);
+  border-left: 4px solid var(--primary);
+}
+
+.nav-item i {
+  margin-right: 10px;
+  color: var(--primary);
+}
